@@ -38,7 +38,8 @@ class TimelineScreen extends ConsumerWidget {
                 Expanded(
                   child: ListView.separated(
                     itemCount: events.length,
-                    separatorBuilder: (_, __) => const SizedBox(height: AppSpacing.sm),
+                    separatorBuilder: (context, index) =>
+                        const SizedBox(height: AppSpacing.sm),
                     itemBuilder: (_, index) {
                       final event = events[index];
                       return TimelineCard(

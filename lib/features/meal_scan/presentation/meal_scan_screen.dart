@@ -133,7 +133,7 @@ class _CameraMockFrameState extends State<_CameraMockFrame>
             }),
             AnimatedBuilder(
               animation: _controller,
-              builder: (_, __) {
+              builder: (context, child) {
                 return Positioned(
                   left: 10,
                   right: 10,

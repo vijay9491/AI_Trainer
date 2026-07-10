@@ -63,7 +63,7 @@ class _LoadingAnimationState extends State<LoadingAnimation>
                 width: 120,
                 height: 120,
                 repeat: true,
-                errorBuilder: (_, __, ___) => Icon(
+                errorBuilder: (_, error, stackTrace) => Icon(
                   Icons.auto_awesome_rounded,
                   size: 72,
                   color: Theme.of(context).colorScheme.primary,
